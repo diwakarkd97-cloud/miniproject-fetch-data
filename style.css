@@ -1,0 +1,127 @@
+/* ==========================================================================
+   RESET & BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   HEADER / FOOTER
+   ========================================================================== */
+.site-header {
+    text-align: center;
+    padding: 30px 16px 10px;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.site-header p {
+    color: #64748b;
+}
+
+/* ==========================================================================
+   MAIN APP AREA
+   ========================================================================== */
+.app-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 16px;
+}
+
+.fact-card {
+    background-color: #f7dddd;
+    border-radius: 14px;
+    padding: 36px 32px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.placeholder-text {
+    color: #010710;
+}
+
+.fact-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.fact-length {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.status-message {
+    margin-top: 14px;
+    font-size: 0.95rem;
+    min-height: 20px;
+}
+
+.status-message.is-error {
+    color: #ef4444;
+    font-weight: 800;
+}
+
+/* ==========================================================================
+   BUTTON
+   ========================================================================== */
+.fetch-button {
+    
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.fetch-button:hover {
+    background-color: #050c22;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 560px) {
+    .site-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .fact-card {
+        padding: 28px 20px;
+    }
+
+    .fact-text {
+        font-size: 1.05rem;
+    }
+
+    .fetch-button {
+        width: 100%;
+    }
+}
